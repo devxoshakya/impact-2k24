@@ -48,34 +48,120 @@ export function People() {
     },
   ];
 
+  const jury = [{
+    id: 1,
+    name: "Dr. Prasenjit Das ",
+    designation: "Cyber Security Lead",
+    image:"/jury/prasenjit-das.png"
+  },
+  {
+    id: 2,
+    name: "Dr. Ankur Agarwal ",
+    designation: "Associate General Manager",
+    image: "/jury/ankur-agarwal.png"
+  },
+  {
+    id: 3,
+    name: "Mr. Ashok Bhatt",
+    designation: "Executive Director",
+    image: "/jury/ashok-bhatt.png"
+  },
+  ]
+
+const technicalTeam = [
+    {
+        id: 1,
+        name: "Dev Shakya",
+        designation: "FullStack Developer",
+        image:"/team/devv.jpg"
+      },
+      {
+        id: 2,
+        name: "Suryansh Patwal",
+        designation: "Frontend Developer",
+        image: "/team/suryaaa.png"
+      },
+]
+
+const organizingTeam = [
+    {
+        id: 1,
+        name: "Yagyansh Singh",
+        image:"/team/Yagyansh-Singh.jpg"
+      },
+      {
+        id: 2,
+        name: "Vaibhav Gupta ",
+        image: "/team/Vaibhav-Gupta.jpg"
+      },
+      {
+        id: 3,
+        name: "Shreya Arora",
+        image:"/team/Shreya-Arora.jpg"
+      },
+      {
+        id: 4,
+        name: "Mayank Tamta",
+        image: "/team/Mayank-Tamta.jpeg"
+      },{
+        id: 5,
+        name: "Kriti",
+        image:"/team/Kriti.jpg"
+      },]
+
+const organizingTeam2 = [
+      {
+        id: 6,
+        name: "Jatin Prakash",
+        image: "/team/Jatin-Prakash.jpg"
+      },{
+        id: 7,
+        name: "Himanshu",
+        image:"/team/Himanshu.jpg"
+      },
+      {
+        id: 8,
+        name: "Divyanshi Goel",
+        image: "/team/Divyanshi-Goel.jpg"
+      },
+      {
+        id: 9,
+        name: "Ankit Bansal",
+        image:"/team/Ankit-Bansal.jpg"
+      },
+]
+
   return (
     <>
-      <BackgroundBeamsWithCollision>
-        <div className="h-screen flex flex-col justify-center items-center px-8">
+        <div className="h-screen flex flex-col justify-center items-center px-8 w-full bg-black  bg-grid-white/[0.2] relative flex items-center justify-center">
           <div className="flex flex-col justify-center items-center mb-8">
             <h2 className="text-4xl  mb-8 ">Our Judges</h2>
             {/* Add content for our judges here */}
 
             <div className="flex flex-row items-center justify-center mb-10 w-full">
-              <AnimatedTooltip items={people} />
+              <AnimatedTooltip items={jury} />
             </div>
           </div>
           <div className="flex flex-col justify-center items-center mb-8">
             <h2 className="text-4xl  mb-8">Technical Team</h2>
             {/* Add content for the technical team here */}
             <div className="flex flex-row items-center justify-center mb-10 w-full">
-              <AnimatedTooltip items={people} />
+              <AnimatedTooltip items={technicalTeam} />
             </div>
           </div>
           <div className="flex flex-col justify-center items-center">
             <h2 className="text-4xl mb-8">Organizing Team</h2>
             {/* Add content for the organizing team here */}
             <div className="flex flex-row items-center justify-center mb-10 w-full">
-              <AnimatedTooltip className="gap-4" items={people} />
+              <AnimatedTooltip className="gap-4" items={organizingTeam} />
+
+            </div>
+            <div className="flex flex-row items-center justify-center mb-10 w-full">
+              <AnimatedTooltip className="gap-4" items={organizingTeam2} />
+
             </div>
           </div>
         </div>
-      </BackgroundBeamsWithCollision>
     </>
   );
 }

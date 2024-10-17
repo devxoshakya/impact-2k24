@@ -18,7 +18,7 @@ export function TimelineDemo() {
           </h1>
           <h2>
             NOTE: You need to use this{" "}
-            <a className="text-blue-500 font-bold" href="/template.pdf">
+            <a className="text-blue-500 font-bold" href="/template.pptx">
               Template
             </a>{" "}
             for the presentation. Be fast as the registerations will close on

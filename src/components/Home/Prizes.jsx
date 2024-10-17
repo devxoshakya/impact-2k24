@@ -92,12 +92,57 @@ export function Prizes() {
               
             </h2>
             <p className="text-neutral-200 text-left font-bold mt-4">
-              Participation Certificate
+              Consolation Rs. 1000
             </p>
           </div>
         </div>
       </div>
         </div>
+
+      <div className="flex md:flex-row justify-center items-center gap-4 md:gap-16">
+        <div className="w-[9rem] h-[14rem] relative rounded-3xl overflow-hidden max-w-md mx-auto bg-gradient-to-r from-[#1D2235] to-[#121318] p-8 my-10">
+        <Rays />
+        <Beams />
+        <div className="relative z-10 justify-center items-center flex-col mx-auto">
+          <Image
+            src="/images/participants.webp"
+            alt="image"
+            width={100}
+            height={100}
+            className="rounded-2xl items-center justify-center mx-auto"
+          />
+          <div className="py-4 relative z-20">
+            <h2 className="text-white text-2xl text-left font-bold">
+            </h2>
+            <p className="text-neutral-200 font-bold mt-4">
+              Swags and Goodies
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="w-[9rem] h-[14rem] relative rounded-3xl overflow-hidden max-w-md mx-auto bg-gradient-to-r from-[#1D2235] to-[#121318] p-8 my-10">
+        <Rays />
+        <Beams />
+        <div className="relative z-10 justify-center items-center flex-col mx-auto">
+          <Image
+            src="/images/participants.webp"
+            alt="image"
+            width={100}
+            height={100}
+            className="rounded-2xl items-center justify-center mx-auto"
+          />
+          <div className="py-4 relative z-20">
+            <h2 className="text-white text-2xl text-left font-bold">
+              
+            </h2>
+            <p className="text-neutral-200 font-bold  mt-4">
+              Participation Certificates
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
       </div>
     </div>
   );
